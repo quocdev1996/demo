@@ -4,7 +4,8 @@
   "description": "This is description of demo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node_modules/webpack/bin/webpack.js --mode production --watch --progress --hide-modules",
+    "build": "node_modules/webpack/bin/webpack.js --mode production --progress --hide-modules"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/quocdev1996/demo/issues"
   },
-  "homepage": "https://github.com/quocdev1996/demo#readme"
+  "homepage": "https://github.com/quocdev1996/demo#readme",
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.23.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
